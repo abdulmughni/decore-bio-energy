@@ -1,0 +1,103 @@
+.progress-bar {
+  position: relative;
+  color: #282c37;
+  background: none;
+  box-shadow: none;
+  height: 200px;
+  width: 200px;
+  margin: 55px 33px;
+}
+
+.progress-bar div {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.progress-bar div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 175px;
+  height: 175px;
+  width: 175px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #282C37;
+}
+
+.progress-bar span.inner-bar-text {
+	background-color: #282c37;
+	border-radius: 50%;
+	color: #828ba2;
+	font-size: 34px;
+	height: 175px;
+	left: 12.5px;
+	line-height: 175px;
+	position: absolute;
+	text-align: center;
+	top: 12.5px;
+	width: 175px;
+	z-index: 100;
+}
+
+.progress-days {
+	color: #cccccc;
+	font-size: 24px;
+	position: absolute;
+	text-align: center;
+	top: -42px;
+
+}
+
+.progress-hours {
+	color: #fff800;
+	font-size: 24px;
+	position: absolute;
+	text-align: center;
+	top: 205px;
+}
+
+.progress-hours.orange {
+	color: #ff8500;
+}
+
+.progress-hours.dark-orange {
+	color: #ff5400;
+}
+
+.progress-hours.red {
+	color: #f70707;
+}
+
+.progress-days, .progress-hours {
+	width: 100%;
+	float: left;
+}
+
+
+.progress-bar .rotate {
+	clip: rect(0 100px 200px 0);
+}
+
+.progress-bar .left {
+	clip: rect(0 100px 200px 0);
+	opacity: 1;
+}
+
+.progress-bar .right {
+	clip: rect(0 100px 200px 0);
+	transform: rotate(180deg);
+	opacity: 0;
+}
+ @keyframes 
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
